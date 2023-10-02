@@ -1,6 +1,4 @@
-package com.example.bartersystem;
-
-import static com.google.android.material.animation.AnimationUtils.*;
+package com.example.bartersystem.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -15,7 +13,8 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.google.android.material.animation.AnimationUtils;
+import com.example.bartersystem.R;
+import com.example.bartersystem.adapters.SliderAdapter;
 
 public class OnBoardingActivity extends AppCompatActivity {
 

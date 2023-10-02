@@ -51,8 +51,9 @@ public class OnBoardingActivity extends AppCompatActivity {
         viewPager.setAdapter(sliderAdapter);
         btn .setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 startActivity(new Intent(OnBoardingActivity.this,RegistrationActivity.class));
+                finish();
             }
         });
 

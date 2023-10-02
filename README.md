@@ -6,3 +6,4 @@ Welcome to the Barter System Android Application repository! This project is cur
 
 - [x] Sign in functionality
 - [x] Sign up functionality
+- [x] On Board Screen

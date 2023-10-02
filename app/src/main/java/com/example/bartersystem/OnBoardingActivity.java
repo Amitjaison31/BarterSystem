@@ -1,5 +1,7 @@
 package com.example.bartersystem;
 
+import static com.google.android.material.animation.AnimationUtils.*;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
@@ -7,9 +9,12 @@ import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
 import android.view.WindowManager;
+import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.google.android.material.animation.AnimationUtils;
 
 public class OnBoardingActivity extends AppCompatActivity {
 
@@ -22,6 +27,8 @@ public class OnBoardingActivity extends AppCompatActivity {
     TextView[] dots;
     private int position = 0;
 
+
+    Animation animation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,6 +80,8 @@ public class OnBoardingActivity extends AppCompatActivity {
             } else if (position == 1) {
                 btn.setVisibility(View.INVISIBLE);
             } else {
+                animation = android.view.animation.AnimationUtils.loadAnimation(OnBoardingActivity.this,R.anim.slide_animation);
+                btn.setAnimation(animation);
                 btn.setVisibility(View.VISIBLE);
             }
 

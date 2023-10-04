@@ -6,4 +6,6 @@
     <string name="third_slide">   To Look Up More Events or Activities Nearby By Map </string>
 
     <string name="description">  "Explore local events easily. From meetups to concerts, find your next adventure here!" </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
